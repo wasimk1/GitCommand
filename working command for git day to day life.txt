@@ -1,0 +1,41 @@
+# =====================================
+# 1. START
+# =====================================
+git status
+# Go to main : git switch main
+# Get latest changes : git pull origin main
+
+# =====================================
+# 2. GO TO WORKING BRANCH
+# =====================================
+git switch practice/commands
+# Bring latest main changes into your branch : git merge main
+
+# =====================================
+# 3. MAKE YOUR CHANGES
+# =====================================
+# Modify your files here
+# Save files
+
+# =====================================
+# 4. SAVE CHANGES IN GIT
+# =====================================
+git status
+git add "Git command.docx"
+git commit -m "Update Git commands"
+git push origin practice/commands
+
+# =====================================
+# 5. MERGE INTO MAIN
+# =====================================
+git switch main
+git pull origin main
+git merge practice/commands
+git push origin main
+
+# =====================================
+# 6. AGAIN SWITCH BACK TO WORKING BRANCH
+# =====================================
+git switch practice/commands
+git status
+take latest from main branch : git pull origin main
